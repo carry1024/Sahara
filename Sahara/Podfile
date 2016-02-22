@@ -1,0 +1,22 @@
+platform :ios, "7.0"
+
+pod "SVProgressHUD"
+pod 'SDWebImage'
+pod "AFNetworking"
+pod "MJRefresh"
+pod 'UMengAnalytics-NO-IDFA'
+pod 'UAProgressView'
+pod 'GDataXML-HTML'
+
+pod 'MobShareSDK'
+pod 'MobShareSDK/UI/iPhoneDefault'
+pod 'MobShareSDK/Connection/QQ'
+pod 'MobShareSDK/Connection/QZone'
+pod 'MobShareSDK/Connection/WeChat'
+pod 'MobShareSDK/Connection/SinaWeibo'
+pod 'MobShareSDK/Connection/SMS'
+
+
+pod 'AMap2DMap'
+pod 'AMapSearch'
+pod 'AMapLocation'

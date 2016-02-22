@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Gg6-p9-e6F" customClass="HeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="24"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="My时间(da)-ic.png" translatesAutoresizingMaskIntoConstraints="NO" id="QNE-8U-ifp">
+                    <rect key="frame" x="12" y="0.0" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="dtj-Dv-Wdc"/>
+                        <constraint firstAttribute="height" constant="24" id="kCL-uA-vr2"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGp-md-ZzS">
+                    <rect key="frame" x="46" y="1" width="32" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="UcG-vN-Xaa"/>
+                        <constraint firstAttribute="height" constant="21" id="Zfq-un-c4m"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2M5-Ob-Ezb">
+                    <rect key="frame" x="94" y="1" width="58" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="58" id="bmW-XS-qmu"/>
+                        <constraint firstAttribute="height" constant="21" id="tXy-vt-KIy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.55294117647058827" green="0.039215686274509803" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="KGp-md-ZzS" firstAttribute="centerY" secondItem="QNE-8U-ifp" secondAttribute="centerY" id="2di-Lq-OY5"/>
+                <constraint firstItem="QNE-8U-ifp" firstAttribute="top" secondItem="Gg6-p9-e6F" secondAttribute="top" id="7wM-fR-H2W"/>
+                <constraint firstItem="2M5-Ob-Ezb" firstAttribute="leading" secondItem="KGp-md-ZzS" secondAttribute="trailing" constant="16" id="Bfm-QZ-TuH"/>
+                <constraint firstItem="2M5-Ob-Ezb" firstAttribute="centerY" secondItem="KGp-md-ZzS" secondAttribute="centerY" id="ia9-YN-she"/>
+                <constraint firstItem="QNE-8U-ifp" firstAttribute="leading" secondItem="Gg6-p9-e6F" secondAttribute="leading" constant="12" id="sO4-S4-xZ9"/>
+                <constraint firstItem="KGp-md-ZzS" firstAttribute="leading" secondItem="QNE-8U-ifp" secondAttribute="trailing" constant="10" id="z0X-Fl-Dbl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="month" destination="KGp-md-ZzS" id="v3A-eH-mII"/>
+                <outlet property="yeaer" destination="2M5-Ob-Ezb" id="jkW-OC-J1J"/>
+            </connections>
+            <point key="canvasLocation" x="639" y="530"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="My时间(da)-ic.png" width="6" height="12"/>
+    </resources>
+</document>

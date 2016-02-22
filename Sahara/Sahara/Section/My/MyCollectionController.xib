@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyCollectionController">
+            <connections>
+                <outlet property="tableView" destination="Uad-4d-Bvb" id="AN9-Gy-Yds"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="withoutLabel" destination="HN5-Rw-Qmh" id="6IX-vY-HoU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="88" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uad-4d-Bvb" customClass="MyCollectionTableView">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂时没有收藏" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HN5-Rw-Qmh" customClass="MBLabelWithFontAdapter">
+                    <rect key="frame" x="118" y="129" width="84" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.58039215686274515" green="0.58431372549019611" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Uad-4d-Bvb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="6YG-da-8pU"/>
+                <constraint firstAttribute="trailing" secondItem="Uad-4d-Bvb" secondAttribute="trailing" id="DQJ-iA-yaq"/>
+                <constraint firstAttribute="bottom" secondItem="Uad-4d-Bvb" secondAttribute="bottom" id="Jnh-HE-gOx"/>
+                <constraint firstItem="Uad-4d-Bvb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="d8c-Lg-djd"/>
+                <constraint firstItem="HN5-Rw-Qmh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gQM-2M-oDW"/>
+                <constraint firstItem="HN5-Rw-Qmh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="129" id="zv8-Iy-ijj"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

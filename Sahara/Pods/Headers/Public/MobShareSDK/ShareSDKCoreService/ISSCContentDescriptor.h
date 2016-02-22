@@ -1,0 +1,1 @@
+../../../../MobShareSDK/Official-Sources/ShareSDK/Core/ShareSDKCoreService.framework/Headers/ISSCContentDescriptor.h

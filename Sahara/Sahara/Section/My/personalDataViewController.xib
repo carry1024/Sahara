@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="personalDataViewController">
+            <connections>
+                <outlet property="headerImage" destination="dKt-0R-f02" id="FqV-Hs-gz4"/>
+                <outlet property="saveInformation" destination="h5m-ar-MBf" id="zIU-cd-YQy"/>
+                <outlet property="tableView" destination="GPL-kB-iqH" id="q7D-mC-wQz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="akX-py-d8V">
+                    <rect key="frame" x="0.0" y="72" width="320" height="68"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="头像" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcO-69-S5y">
+                            <rect key="frame" x="12" y="23" width="31" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="Dx1-Y4-Ppl"/>
+                                <constraint firstAttribute="width" constant="31" id="whf-Bk-Kpi"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="My右箭头" translatesAutoresizingMaskIntoConstraints="NO" id="s8l-0R-t3J">
+                            <rect key="frame" x="302" y="27" width="6" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="6" id="5e5-1a-b66"/>
+                                <constraint firstAttribute="height" constant="12" id="efv-WG-PtE"/>
+                            </constraints>
+                        </imageView>
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="My默认图片-资料修改" translatesAutoresizingMaskIntoConstraints="NO" id="dKt-0R-f02">
+                            <rect key="frame" x="242" y="8" width="52" height="52"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="52" id="3t5-Gb-yqq"/>
+                                <constraint firstAttribute="height" constant="52" id="rS1-jP-Pu7"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="CdR-Ix-FrG" appends="YES" id="YYJ-b8-PB0"/>
+                            </connections>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="dKt-0R-f02" firstAttribute="centerY" secondItem="lcO-69-S5y" secondAttribute="centerY" id="2i5-4I-Da5"/>
+                        <constraint firstItem="lcO-69-S5y" firstAttribute="leading" secondItem="akX-py-d8V" secondAttribute="leading" constant="12" id="5Tk-7D-xbk"/>
+                        <constraint firstItem="s8l-0R-t3J" firstAttribute="leading" secondItem="dKt-0R-f02" secondAttribute="trailing" constant="8" id="GY0-b6-1zz"/>
+                        <constraint firstItem="lcO-69-S5y" firstAttribute="top" secondItem="akX-py-d8V" secondAttribute="top" constant="23" id="MDG-Uf-c4h"/>
+                        <constraint firstAttribute="height" constant="68" id="t7G-iv-O6m"/>
+                        <constraint firstItem="s8l-0R-t3J" firstAttribute="centerY" secondItem="lcO-69-S5y" secondAttribute="centerY" id="w2W-RQ-FIH"/>
+                        <constraint firstAttribute="trailing" secondItem="s8l-0R-t3J" secondAttribute="trailing" constant="12" id="z7v-hd-Lc2"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="HTJ-Qj-SPx" appends="YES" id="A2b-m5-ALn"/>
+                    </connections>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5m-ar-MBf">
+                    <rect key="frame" x="33" y="419" width="254" height="50"/>
+                    <state key="normal" title="保存修改" backgroundImage="login_确定框">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="saveInformationAction:" destination="-1" eventType="touchUpInside" id="dHB-yA-kNS"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GPL-kB-iqH">
+                    <rect key="frame" x="0.0" y="148" width="320" height="241"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="241" id="O3N-gT-l39"/>
+                    </constraints>
+                    <color key="sectionIndexBackgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="akX-py-d8V" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="72" id="8cU-qn-njd"/>
+                <constraint firstItem="GPL-kB-iqH" firstAttribute="top" secondItem="akX-py-d8V" secondAttribute="bottom" constant="8" id="RIl-J2-Kub"/>
+                <constraint firstAttribute="trailing" secondItem="akX-py-d8V" secondAttribute="trailing" id="Y0c-KD-nkt"/>
+                <constraint firstItem="h5m-ar-MBf" firstAttribute="top" secondItem="GPL-kB-iqH" secondAttribute="bottom" constant="30" id="Yh2-Q4-vTG"/>
+                <constraint firstAttribute="trailing" secondItem="GPL-kB-iqH" secondAttribute="trailing" id="ZXD-uS-5a0"/>
+                <constraint firstAttribute="trailing" secondItem="h5m-ar-MBf" secondAttribute="trailing" constant="33" id="ZYo-vl-U4f"/>
+                <constraint firstItem="akX-py-d8V" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dB1-vi-Nz1"/>
+                <constraint firstItem="h5m-ar-MBf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="33" id="swv-Ul-rxk"/>
+                <constraint firstItem="GPL-kB-iqH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="x9O-fs-MnO"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="26" y="326"/>
+        </view>
+        <tapGestureRecognizer id="CdR-Ix-FrG">
+            <connections>
+                <action selector="getHeaderImage:" destination="-1" id="DwF-K7-Gxp"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="HTJ-Qj-SPx">
+            <connections>
+                <action selector="grtHeaderImageSecond:" destination="-1" id="ZXF-xe-Vsq"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="My右箭头" width="12" height="24"/>
+        <image name="My默认图片-资料修改" width="58" height="58"/>
+        <image name="login_确定框" width="295" height="50"/>
+    </resources>
+</document>

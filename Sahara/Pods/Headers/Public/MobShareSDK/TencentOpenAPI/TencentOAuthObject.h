@@ -1,0 +1,1 @@
+../../../../MobShareSDK/Official-Sources/ShareSDK/Extend/QQConnectSDK/TencentOpenAPI.framework/Headers/TencentOAuthObject.h

@@ -1,0 +1,1 @@
+../../../../MobShareSDK/Official-Sources/ShareSDK/Connection/SMSConnection.framework/Headers/SMSConnection.h

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyAccountViewController">
+            <connections>
+                <outlet property="exitLogin" destination="Tu5-yz-E3E" id="7vl-Om-yka"/>
+                <outlet property="tableView" destination="iEU-bv-QDM" id="Mii-Df-d2M"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iEU-bv-QDM">
+                    <rect key="frame" x="0.0" y="80" width="320" height="225"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="225" id="EqK-Nc-kV7"/>
+                    </constraints>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tu5-yz-E3E">
+                    <rect key="frame" x="0.0" y="317" width="320" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="X12-Kb-KdU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="退出登录">
+                        <color key="titleColor" red="0.96862745098039216" green="0.48627450980392156" blue="0.16078431372549021" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="exitLogin:" destination="-1" eventType="touchUpInside" id="aPT-J4-nuX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Tu5-yz-E3E" secondAttribute="trailing" id="8cw-rw-fMN"/>
+                <constraint firstAttribute="trailing" secondItem="iEU-bv-QDM" secondAttribute="trailing" id="9SY-Gh-hYm"/>
+                <constraint firstItem="iEU-bv-QDM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="Me9-fq-EUo"/>
+                <constraint firstItem="Tu5-yz-E3E" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hbq-g2-HBg"/>
+                <constraint firstItem="Tu5-yz-E3E" firstAttribute="top" secondItem="iEU-bv-QDM" secondAttribute="bottom" constant="12" id="huY-AY-PRD"/>
+                <constraint firstItem="iEU-bv-QDM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kC3-p2-8eq"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
